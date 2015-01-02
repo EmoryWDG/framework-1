@@ -1,0 +1,48 @@
+/*Template Search Results CSS */
+
+.big-search {
+    .input {
+        margin-top: 25px;
+        border-radius: 5px;
+        border: solid 1px #CCC;
+        padding: 8px;
+    }
+    .btn-search {
+        background-color: #333;
+        color: #FFF;
+    }
+}
+.search-results {
+    h2 {
+        border-bottom: solid 1px #CCC;
+        padding: 10px;
+        font-size: 1em;
+    }
+    h3 {
+        margin-bottom: 0px;
+    }
+    .listings {
+        li {
+            padding: 5px 10px;
+            &:nth-child(odd) {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+}
+.pagination {
+    display: inherit;
+    text-align: center;
+    ul {
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        li {
+            display: inline;
+            padding: 10px;
+        }
+    }
+}
+.key-matches {
+    display: none;
+}

@@ -1,0 +1,96 @@
+.page-content {
+    @mixin border-radius( $radius ) {
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+      border-radius: $radius;
+  }
+    min-height: 30px;
+  $margin-y: 20px;
+  $margin-x: 10px;
+
+  figure {
+    margin-top: 7px;
+    margin-bottom: 0px;
+
+    @include border-radius( 4px );
+
+    img {
+        width: 100%
+    }
+
+    p.image-credit {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: .5em;
+        margin-bottom: 0;
+    }
+
+    figcaption.image-caption {
+        font-size: .875rem;
+        line-height: 1.2em;
+        margin-top: .5em;
+    }
+
+}
+
+figure.full-width,
+figure.one-fourth,
+figure.one-third,
+figure.one-half,
+figure.two-thirds,
+figure.three-fourths {
+    width: 100%;
+}
+
+figure.pull-right{
+    margin-left: $margin-x;
+}
+
+figure.pull-left{
+    margin-right: $margin-x;
+}
+
+.btn {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    @include border-radius( 4px );
+    padding: 0 60px;
+    margin: 0 auto;
+
+    .wrap-text{
+        white-space: normal;
+    }
+}
+}
+
+@media only screen and (min-width:768px) {
+
+    .page-content {
+        
+        figure.one-fourth {
+            width: 25%;
+        }
+
+        figure.one-third {
+            width: 33%;
+        }
+
+        figure.one-half {
+            width: 50%;
+        }
+
+        figure.two-thirds {
+            width: 66%;
+        }
+
+        figure.three-fourths {
+            width: 75%;
+        }
+    }
+}
+
+.structured-content-block {
+    @extend .page-content;
+}

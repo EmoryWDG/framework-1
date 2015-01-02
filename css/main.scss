@@ -1,0 +1,229 @@
+
+html {
+	height:100%;
+}
+
+body {
+	position:relative;
+	padding-bottom:65px;
+	height:100%;
+}
+
+#footer{
+	width:100%;
+}
+
+.emory-wide {
+	font-size: 10px;
+	font-family: Verdana, Arial, sans-serif;
+	z-index: 9999;
+	float:right;
+
+
+	ul {
+		list-style: none;
+
+		li {
+			&:hover>.nav-box {
+				display: block;
+			}
+
+			&.top {
+				display: inline-block;
+				position: relative;
+				float: left;
+				// width: 90px;
+				padding: 8px;
+
+				.nav-box.search {
+					display: block;
+					position: relative;
+					float: right;
+					width: 20em;
+					height: 11.2em;
+					margin: 0 0em 0 2.4em;
+					padding: 0 0 0 .4em;
+					top: 0;
+					background: 0;
+				}
+
+				&>a {
+					color: #b8bcd6;
+					text-transform: uppercase;
+					text-decoration: none;
+					background-image: url('https://template.emory.edu/assets/css/img/arrow-light.gif');
+					background-repeat: no-repeat;
+					padding-left: 13px;
+					background-position: left center;
+				}
+
+				&:hover {
+					text-decoration: none;
+					background-color: #2d5aaf;  
+
+					a {
+						background-image: url('https://template.emory.edu/assets/css/img/arrow-light-down.gif');
+						background-repeat: no-repeat; 
+						color: #FFF;
+					}
+					.nav-box a {
+						background-image: none;
+						color: #FFF;
+					}
+				}
+				&.search,&.search:hover {
+
+					padding-top: 4px;
+					width: auto;
+					height: 0px;
+					background: inherit;
+					padding-left: 0px;
+					z-index: 1;
+				}
+			}
+		}
+
+		.nav-box {
+			display: none;
+			position: absolute;
+			right:0;
+			background-color: black;
+			width: 425px;
+			background: #264b91 url('https://template.emory.edu/assets/css/img/call-out-bg.jpg') no-repeat top;
+			height: 235px;
+			z-index: 9999;
+			padding: 16px 0px 20px 16px;
+			margin-top: 8px;
+
+			ul {
+				padding-left: 10px;
+				float: left;
+
+				li {
+					list-style: initial;
+					color: #FFF;
+					line-height: 17px;
+					margin-left: 10px;
+				}
+			}
+			#form-search .btn {
+				color: #fff;
+				font-size: 12px;
+				padding-top: 2px;
+				padding-bottom: 2px;
+				background: #4070cb;
+				border: 1px solid #4070cb;
+				margin-bottom: 0;
+				box-shadow: none;
+				min-width: 25px;
+				min-height: 21px;
+				border-radius: 0px 5px 5px 0px;
+				height: 21px;
+				width: 25px;
+				margin-top: -2px;
+				padding: 0px 6px 0px 6px;
+			}
+		}
+	}
+
+
+	h4 {
+		margin: 0;
+		padding: 0;
+		float: left;
+		width: 100%;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 10px;
+		text-transform: uppercase;
+		margin: 5px 0px 3px 0px;
+	}
+	input#q {
+		border-radius: 5px 0px 0px 5px;
+		height: 21px;
+		width: 170px;
+		padding-left:10px;
+		border: solid 1px #CCC;
+		margin-right: -7px;
+	}
+}
+
+.white .emory-wide .top>a {
+	color: #13358c;
+	background-image: url('https://template.emory.edu/assets/wdg/custom-framework/css/img/arrow-white.png');
+}
+
+.col {
+	width: 50%;
+	float: left;
+	padding:5px;
+	&.col-1 {
+		width: 43%;
+		margin-right: 20px;
+	}
+}
+
+a.skip, a.skip:hover, a.skip:visited {
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.search-scope {
+	z-index: 100;
+	padding: 0px 0;
+	background: #fff;
+	position: absolute;
+	margin: -5.5px 0px 0 6px;
+	width: 82%;
+	border: 1px solid #ccc;
+	display:none;
+
+	label {
+		display: block;
+		float: none;
+		border-top: 1px solid #d9dfe3;
+		margin-bottom: 0;
+		display: inline-block;
+		color: #333;
+		padding: 5px 5px 5px 25px;
+		cursor: pointer;
+		width:100%;
+	}
+
+	label.checked {
+		background: url('/assets/css/img/check.png') no-repeat .5em center;
+		font-weight: bold;
+	}
+
+	label:first-child {
+		border-top: 0;
+	}
+
+
+	input {
+		position:absolute;
+		left: -9999px;
+	}
+
+}
+
+#header .blue {
+	background: #002878;
+}
+.unit-signature #emory-wide {
+	margin-bottom: -30px;
+}
+
+@import 'header';
+@import 'structured-content';
+@import 'search-results';
+@import 'responsive-video';
+@import 'form';
+@import 'footer-hat';
+@import 'footer';
+
+

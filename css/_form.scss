@@ -1,0 +1,54 @@
+form {
+	.error { 
+		display: none; 
+		padding:10px; 
+		margin:0 0 5px 0;
+		color: #D8000C; 
+		font-size:12px;
+		background-color: #FFBABA;
+	}
+	.success { 
+		display: none; 
+		padding:10px; 
+		color: #044406; 
+		font-size:12px;
+		background-color: #B7FBB9;
+	}
+
+	.form-field {
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 1em; 
+
+		.form-label {
+		width: 30%;
+		display: inline-block;	
+			.required {
+				color: red;
+				font-size: .8em;
+			}	
+		}
+		
+		.form-input {
+		width: 60%;
+		display: inline-block;
+			input, textarea {
+				width: 100%;
+				border-radius: 5px;
+				border: solid 1px #CCC;
+				padding: 10px 0px 5px 10px;
+				font-size: 1em;
+			}
+			input[type="radio"] {
+				display: inline-block;
+				margin-left: 10px;
+				width: 5%;
+			}
+			input[type="radio"]:first-child {
+				margin-left: 0;
+			}
+		}
+	
+	}
+
+}
