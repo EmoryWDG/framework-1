@@ -198,6 +198,12 @@ a.skip, a.skip:hover, a.skip:visited {
 /*Template Header CSS */
 #header .header-hat {
   background: #002878;
+  position: relative;
+  z-index: 9999;
+}
+#header .header-hat .fa.fa-search {
+  margin-left: -16px;
+  color: #FFF;
 }
 #header .header-hat .no-logo {
   height: 25px;

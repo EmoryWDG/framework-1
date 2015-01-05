@@ -3,6 +3,12 @@
 #header {
     .header-hat {
         background: #002878;
+        position: relative;
+        z-index: 9999;
+        .fa.fa-search {
+            margin-left: -16px;
+            color: #FFF;
+        }
         .no-logo {
             height: 25px;
         }

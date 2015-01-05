@@ -5,7 +5,7 @@
       -ms-border-radius: $radius;
       border-radius: $radius;
   }
-    min-height: 30px;
+  min-height: 30px;
   $margin-y: 20px;
   $margin-x: 10px;
 
@@ -21,9 +21,10 @@
 
     p.image-credit {
         font-size: 11px;
-        line-height: 16px;
-        margin-top: .5em;
-        margin-bottom: 0;
+        line-height: 0px;
+        margin: 0em;
+        text-align: center;
+        padding: 1em;
     }
 
     figcaption.image-caption {
