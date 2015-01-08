@@ -14,17 +14,34 @@
         }
 
         .logo, .logo img {
-           height:30px;
-       }
-   }
+            height:30px;
+        }
+        ul.header-links {
+            list-style: none;
+            display: inline-block;
+            height: 100%;
+            position: relative;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding: 0;
+            text-align: right;
+            float: right;
+            li {
+                padding: .3em 1em;
+                height: 100%;
+            }
+        }
+    }
 
-   .blue {
+    .blue {
 
-   }    
+    }    
 
-   .white {
-    background-color: white;
-}
+    .white {
+        background-color: white;
+    }
+
+
 
 }
 
