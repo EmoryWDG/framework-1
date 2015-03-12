@@ -329,6 +329,13 @@ a.skip, a.skip:hover, a.skip:visited {
 	margin-bottom: -30px;
 }
 
+.internal-alert {
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 0px;
+}
+
 @import 'header';
 @import 'structured-content';
 @import 'search-results';
