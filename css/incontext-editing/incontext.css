@@ -1,0 +1,152 @@
+/* INCONTEXT EDITING DESIGNS */
+#header .header-hat {
+  z-index: 2;
+}
+
+.internal_div {
+  padding-left: 15px;
+}
+
+.row {
+  min-height: 30px;
+}
+
+.icon-edit .inline {
+  font-size: 17px;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.edit-icons {
+  border-radius: 0px 0px 5px 0px;
+  text-align: left;
+  display: none;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  color: #FFF;
+  line-height: 30px;
+  min-width: 257px;
+  z-index: 9999;
+}
+.edit-icons a {
+  color: #FFF !important;
+}
+.edit-icons a:hover {
+  text-decoration: none;
+}
+.edit-icons ul {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.edit-icons li {
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+  min-width: 30px;
+  text-align: center;
+}
+.edit-icons li:last-child {
+  border-radius: 0 0 5px 0;
+}
+.edit-icons .title {
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: center;
+}
+
+.incontext-edit {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.incontext-edit .edit-icons {
+  background-color: #285a85;
+}
+.incontext-edit .edit-icons.sitewide-content {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.incontext-edit .edit-icons.sitewide-content a {
+  color: #8a6d3b;
+}
+.incontext-edit .edit-icons.sitewide-content a:hover {
+  color: #FFF;
+}
+.incontext-edit .edit-icons.sitewide-content li:hover {
+  background-color: #8a6d3b;
+}
+.incontext-edit .edit-icons.sitewide-content li:hover a {
+  color: #FFF;
+  text-decoration: none;
+}
+.incontext-edit .edit-icons.icon-list li:last-child {
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+}
+.incontext-edit .edit-icons.icon-list li:last-child::hover {
+  border-radius: 0px 0px 5px 0px;
+}
+.incontext-edit .edit-icons.blue {
+  background-color: #285a85;
+}
+.incontext-edit .edit-icons.blue li:hover {
+  background-color: #1c3f5e;
+}
+.incontext-edit .edit-icons.blue .title:hover {
+  background-color: #1c3f5e;
+}
+.incontext-edit .edit-icons.yellow {
+  background-color: #f9b418;
+}
+.incontext-edit .edit-icons.yellow li:hover {
+  background-color: #d89806;
+}
+.incontext-edit .edit-icons.yellow .title:hover {
+  background-color: #d89806;
+}
+.incontext-edit .edit-icons.sitewide-warning {
+  background-color: #a94442;
+}
+.incontext-edit .edit-icons.sitewide-warning li:hover {
+  background-color: #843534;
+}
+.incontext-edit .edit-icons.sitewide-warning .title:hover {
+  background-color: #843534;
+}
+.incontext-edit:hover {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #555;
+  margin: -2px;
+}
+.incontext-edit:hover > .edit-icons {
+  display: block;
+}
+
+.incontext-edit.content-block {
+  float: left;
+  width: 100%;
+}
+.incontext-edit.content-block:hover {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: #CCC;
+  margin: -2px;
+}
+.incontext-edit.content-block:hover > .edit-icons {
+  display: block;
+}
+.incontext-edit.content-block:hover .row > .edit-icons {
+  display: block;
+}
+.incontext-edit.content-block:hover .container > .edit-icons {
+  display: block;
+}
+
+/*# sourceMappingURL=incontext.css.map */

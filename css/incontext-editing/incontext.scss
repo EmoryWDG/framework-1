@@ -1,0 +1,162 @@
+/* INCONTEXT EDITING DESIGNS */
+
+$blue: #285a85;
+$yellow: #f9b418;
+$red: #a94442;
+$white: #FFF;
+$amount: 10%;
+
+#header .header-hat {
+    z-index: 2;
+}
+.internal_div {
+  padding-left: 15px;
+}
+.row {
+    min-height: 30px;
+}
+.icon-edit .inline {
+    font-size: 17px;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.edit-icons {
+    border-radius: 0px 0px 5px 0px;
+    text-align: left;
+    display: none;
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    color: $white;
+    line-height: 30px;
+    min-width: 257px;
+    z-index: 9999;
+    a {
+        color: $white !important;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    ul {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+    li {
+        display: inline-block;
+        padding-left: 7px;
+        padding-right: 7px;
+        min-width: 30px;
+        text-align: center;
+        &:last-child {
+            border-radius: 0 0 5px 0;
+        }
+    }
+    .title{
+        text-transform: uppercase;
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+.incontext-edit { 
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    .edit-icons {
+        background-color: $blue;
+        &.sitewide-content {
+            color: #8a6d3b;
+            background-color: #fcf8e3;
+            border-color: #faebcc;
+            a{
+                color: #8a6d3b;
+                &:hover {
+                    color: $white;
+                }
+            }
+            li {
+                &:hover {
+                    background-color: #8a6d3b;
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &.icon-list {
+            li:last-child {
+                padding-right: 5px;
+                position: absolute;
+                right: 0;
+                &::hover {
+                    border-radius: 0px 0px 5px 0px;
+
+                }
+            }
+        }
+        &.blue {
+            background-color: $blue;
+            li:hover {
+                background-color: darken($blue, $amount);
+            }
+            .title:hover{
+                background-color: darken($blue, $amount)
+            }
+        }
+        &.yellow {
+            background-color: $yellow;
+            li:hover {
+                background-color: darken($yellow, $amount);
+            }
+            .title:hover{
+                background-color: darken($yellow, $amount)
+            }
+        }
+        &.sitewide-warning{
+            background-color: $red;
+            li:hover {
+                background-color: darken($red, $amount);
+            }
+            .title:hover{
+                background-color: darken($red, $amount)
+            }
+        }
+    }
+    
+    &:hover {
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #555;
+        margin: -2px;
+        > .edit-icons {
+            display: block;
+        }
+    }
+}
+
+
+.incontext-edit {
+    &.content-block {
+        float: left;
+        width: 100%;
+        &:hover {
+            border-style: dotted;
+            border-width: 2px;
+            border-color: #CCC;
+            margin: -2px;
+        }
+        &:hover > .edit-icons { 
+            display: block;
+        }
+        &:hover .row > .edit-icons { 
+            display: block;
+        }
+        &:hover .container > .edit-icons { 
+            display: block;
+        }
+    }
+}
