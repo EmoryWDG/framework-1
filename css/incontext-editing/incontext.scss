@@ -160,3 +160,11 @@ $amount: 10%;
         }
     }
 }
+
+.row:hover .internal_incontext{
+    border: dotted 1px #CCC;
+    overflow: auto;
+    .edit-icons.custom_incontext {
+        display: block;
+    }
+}

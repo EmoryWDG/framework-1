@@ -149,4 +149,12 @@
   display: block;
 }
 
+.row:hover .internal_incontext {
+  border: dotted 1px #CCC;
+  overflow: auto;
+}
+.row:hover .internal_incontext .edit-icons.custom_incontext {
+  display: block;
+}
+
 /*# sourceMappingURL=incontext.css.map */
